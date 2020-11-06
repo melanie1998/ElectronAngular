@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortadaComponent } from './portada/portada.component';
@@ -11,7 +10,8 @@ import { ParticlesModule } from 'angular-particle';
 import { HttpClientModule } from '@angular/common/http';
 import { MapaComponent } from './mapa/mapa.component';
 import { PerfilAdminComponent } from './perfil-admin/perfil-admin.component';
-import { MenuPerfilComponent } from './menu-perfil/menu-perfil.component';
+import { MenuComponent } from './menu/menu.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,13 +22,14 @@ import { MenuPerfilComponent } from './menu-perfil/menu-perfil.component';
     RegistroComponent,
     MapaComponent,
     PerfilAdminComponent,
-    MenuPerfilComponent
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ParticlesModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

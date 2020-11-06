@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menu-perfil',
-  templateUrl: './menu-perfil.component.html',
-  styleUrls: ['./menu-perfil.component.css']
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css']
 })
-export class MenuPerfilComponent implements OnInit {
+export class MenuComponent implements OnInit {
 
   constructor() { }
 

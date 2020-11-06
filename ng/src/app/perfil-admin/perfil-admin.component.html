@@ -1,1 +1,31 @@
-<p>perfil-admin works!</p>
+<div class="fondo">
+    <div class="titulo"><h2>ADMIN MENU</h2></div>
+    <table>
+        <tr>
+            <td><h2 style="color: red">nombre</h2></td>
+            <td><h2 style="color: red">apellido</h2></td>
+            <td><h2 style="color: red">email</h2></td>
+            <td><h2 style="color: red">localidad</h2></td>
+            <td><h2 style="color: red">pais</h2></td>
+            <td><h2 style="color: red">direccion</h2></td>
+            <td><h2 style="color: red">codigoPostal</h2></td>
+            <td><h2 style="color: red">telefono</h2></td>
+            <td><h2 style="color: red">usuario</h2></td>
+      
+        </tr>
+            <tr *ngFor="let data of data"><td><h2>{{data.nombre}}</h2></td>
+               <td><h2>{{data.apellido}}</h2></td>
+                   <td><h2>{{data.email}}</h2></td>
+                        <td><h2>{{data.localidad}}</h2></td>
+                            <td><h2>{{data.pais}}</h2></td>
+                               <td><h2>{{data.direccion}}</h2></td>
+                                  <td><h2>{{data.codigoPostal}}</h2></td>
+                                      <td><h2>{{data.telefono}}</h2></td>
+                                           <td><h2>{{data.usuario}}</h2></td>
+                                       </tr>
+    
+    </table>
+</div>
+
+     
+   
