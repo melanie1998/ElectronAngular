@@ -11,6 +11,7 @@
             <td><h2 style="color: red">codigoPostal</h2></td>
             <td><h2 style="color: red">telefono</h2></td>
             <td><h2 style="color: red">usuario</h2></td>
+            <td><h2 style="color: red">Ver datos</h2></td>
       
         </tr>
             <tr *ngFor="let data of data"><td><h2>{{data.nombre}}</h2></td>
@@ -21,8 +22,9 @@
                                <td><h2>{{data.direccion}}</h2></td>
                                   <td><h2>{{data.codigoPostal}}</h2></td>
                                       <td><h2>{{data.telefono}}</h2></td>
-                                           <td><h2>{{data.usuario}}</h2></td>
-                                       </tr>
+                                        <td><h2>{{data.usuario}}</h2></td>
+                                           <td><a [routerLink]="['/datos-usuario-admin', data.usuario]"><button>Ver datos</button></a></td>
+                                                </tr>
     
     </table>
 </div>

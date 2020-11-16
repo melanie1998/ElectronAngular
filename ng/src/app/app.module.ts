@@ -12,6 +12,7 @@ import { MapaComponent } from './mapa/mapa.component';
 import { PerfilAdminComponent } from './perfil-admin/perfil-admin.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { DatosUsuarioAdminComponent } from './datos-usuario-admin/datos-usuario-admin.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     RegistroComponent,
     MapaComponent,
     PerfilAdminComponent,
-    MenuComponent
+    MenuComponent,
+    DatosUsuarioAdminComponent
   ],
   imports: [
     BrowserModule,

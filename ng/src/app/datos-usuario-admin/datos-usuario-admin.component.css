@@ -106,26 +106,63 @@ label{
     background-color: rgb(16, 16, 16);
 }
 
-.imagen{
+/* .imagen{
     position: absolute;
     margin-left: 6vw;
     height: 10vw;
     width: 12vw;
     display: flex;
     justify-content: center;
+} */
 
+.botones{
+    margin-top: 20vh;
+    margin-left: 7vw;
+}
+
+.modificar{
+    background-color: black;
+    width: 10vw;
+    color: wheat;
+    border-radius: 15px;
+    font-size: 2em;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.modificar:hover{
+    color: black;
+    background-color: wheat;
+}
+
+.eliminar{
+    margin-top: 10vh;
+    background-color: black;
+    width: 10vw;
+    color: wheat;
+    border-radius: 15px;
+    font-size: 2em;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.eliminar:hover{
+    color: black;
+    background-color: wheat;
 }
 
 @media screen and (max-width: 415px) {
     
     .fondo{
-        height: 170vh;
+        height: 120vh;
     }
 
     .formulario{
         margin-top: 10vh;
         width: 85vw;
-        height: 160vh;
+        height: 110vh;
     }
 
     .campos{
@@ -133,12 +170,12 @@ label{
         margin-left: 30vw;
     }
 
-    .imagen{
+    /* .imagen{
         margin-left: -8vw;
         height: 30vw;
         width: 34vw;
         margin-top: 78vh;
-    }
+    } */
 
     .volver{
         top: 28px;
@@ -150,6 +187,24 @@ label{
         top: 28px;
         right: 20px;
         font-size: 22px;
+    }
+
+    .botones{
+        margin-top: 80vh;
+        margin-left: -18vw;
+    }
+
+    .modificar{
+        width: 50vw;
+        font-size: 1em;
+
+    }
+    
+    .eliminar{
+        margin-top: 3vh;
+        width: 50vw;
+        font-size: 1em;
+
     }
  
 }

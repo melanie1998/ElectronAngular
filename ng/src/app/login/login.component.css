@@ -120,7 +120,6 @@ a{
     top: 70px;
     left: 50px;
     width: 7.5vw;
-    transition: all 200ms;
     font-size: 32px;
     font-weight: bold;
     text-decoration: none;
@@ -132,7 +131,6 @@ a{
     position: absolute;
     top: 70px;
     right: 50px;
-    transition: 1s;
     font-size: 32px;
     font-weight: bold;
     text-decoration: none;
@@ -148,7 +146,6 @@ a{
     border-radius: 20px;
     top: 70px;
     right: 50px;
-    transition: all 200ms;
     font-size: 32px;
     font-weight: bold;
     text-decoration: none;
@@ -160,7 +157,6 @@ a{
     position: absolute;
     top: 70px;
     right: 50px;
-    transition: 1s;
     font-size: 32px;
     font-weight: bold;
     text-decoration: none;
@@ -177,3 +173,90 @@ a{
     text-align: center;
 }
 
+@media screen and (max-width: 415px) {
+
+    .fondo{
+        margin-top: -14vh;
+        height: 90vh;
+    }
+    .formulario{
+        margin: auto;
+        margin-top: 14vh;
+        width: 80vw;
+        height: 75vh;
+        background-color: transparent;
+        z-index: 1;
+        border-radius: 8px;
+        border: 3px solid rgb(16, 16, 16);
+        box-shadow: inset 0px 0px 20px 2px rgba(27, 27, 27,0.75);
+    }
+
+    .logologin{
+        opacity: 0;
+    }
+
+    .registro{
+        border-radius: 20px;
+        top: 40px;
+        left: 7px;
+        width: 7.2vw;
+        font-size: 25px;
+    }
+
+    .registro:hover{
+        border-radius: 20px;
+        top: 30px;
+        left: 7px;
+        width: 30vw;
+        font-size: 25px;
+    }
+
+    .volver{
+        border-radius: 20px;
+        top: 40px;
+        right: 10px;
+        width: 25vw;
+        font-size: 25px;
+    }
+
+    .volver:hover{
+        border-radius: 20px;
+        top: 30px;
+        right: 10px;
+        width: 25vw;
+        font-size: 25px;
+    }
+
+    .campos{
+        width: 60vw;
+        background: #FFF;
+        outline: none;
+        border: none;
+        padding: 10px;
+        margin-top: 5vh;
+        border-radius: 6px;
+        color: #000;
+        font-style: 18px;
+        margin-bottom: 1vh;
+        border: none;
+        border-bottom: 2px solid #222;
+        margin-left: 7vw;
+    }
+
+    .botonLogin{
+        width: 30%;
+        min-width: 100px;
+        background-color: #C9C9C9;
+        padding: 10px 10px;
+        color: black;
+        display: flex;
+        transition: .2s ease-in-out;
+        margin-top: 2vh;
+        text-decoration: none; 
+        border: 2px solid #000;
+        transform: scale(1.05);
+        cursor: pointer;
+        margin-left: 26vw;
+        margin-top: 20vh;
+    }
+}

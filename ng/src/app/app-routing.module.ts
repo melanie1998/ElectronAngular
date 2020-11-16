@@ -6,6 +6,7 @@ import { PerfilAdminComponent } from './perfil-admin/perfil-admin.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PortadaComponent } from './portada/portada.component';
 import { RegistroComponent } from './registro/registro.component';
+import { DatosUsuarioAdminComponent } from './datos-usuario-admin/datos-usuario-admin.component'; 
 
 
 const routes: Routes = [
@@ -14,7 +15,9 @@ const routes: Routes = [
   { path: 'registro', component: RegistroComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'perfil', component: PerfilComponent },
-  { path: 'perfil-admin', component: PerfilAdminComponent}
+  { path: 'perfil-admin', component: PerfilAdminComponent},
+  { path: 'datos-usuario-admin/:usuario', component: DatosUsuarioAdminComponent}
+
   
 ];
 

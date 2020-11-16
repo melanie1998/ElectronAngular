@@ -5,7 +5,7 @@
 <div class="fondo"></div>
 <div class="formulario">
     
-    <h3 id="titulo"><u>User Profile</u></h3>
+    <h3 id="titulo"><u>Admin Profile</u></h3>
     <div class="ladoizq" *ngFor = "let data of data">
         <label>First Name</label>
         <input type="text" name="firstname" class="campos" placeholder="FirstName" value={{data.nombre}} readonly>
@@ -27,10 +27,6 @@
         <input type="text" name="username" class="campos" placeholder="Username" value={{data.usuario}}>
         <label>Password</label>
         <input type="text" name="password" class="campos" placeholder="Password" value={{data.contrasena}}>
-    </div>
-    <div class="ladoder">
-        <div class="imagen"><img src="assets/images/katua.png" style="height: 100%" alt=""></div>
-        <app-mapa></app-mapa>
     </div>
     <a routerLink="/menuPerfil" routerLinkActive="active">
     <div class="volver">GO BACK</div></a> 
